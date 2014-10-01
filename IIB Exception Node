@@ -1,0 +1,23 @@
+Introduction
+Exception plugin node facilitate capturing of exception details from ExeceptionTree.
+
+Pre-Requisite
+This plug-in node requires IBM Integration Bus (IIB) v9 or above, and has been developed on the IIBv9 FixPack 1 level of the product on both Microsoft Windows and Linux. 
+
+Installation
+The plug-in node consists of two parts, a run-time JAR file (ExceptionRuntime.jar), and a design-time Toolkit plug-in (ExceptionJavaPlugin.jar) which provides the node for use in message flows.
+
+Installing the run-time component
+After unzipping the plugin zip file, copy the runtime/ExceptionRuntime.jar file to all of the machines running brokers that are required to run the node. The JAR file should be placed in the <IIB Install Directory>/plugin location, where <IIB Install Directory> is the where the IIB runtime product was installed (for e.g. C:\Program Files (x86)\IBM\MQSI\9.0.0.0\jplugin)
+
+Installing the design-time component
+After unzipping the plugin zip file, copy the toolkit/ ExceptionJavaPlugin.jar and place in the <IIB Toolkit Directory>/plugins location, where <IIB Toolkit Directory> is the where IIB Toolkit product was installed (for e.g. C:\Program Files (x86)\IBM\IntegrationToolkit90\plugins)
+
+Uninstalling
+
+Stop Broker and Close Toolkit
+
+Remove the runtime jar ExceptionRuntime.jar from <IIB Install Directory>/plugin directory 
+Remove the toolkit jar ExceptionJavaPlugin.jar from <IIB Toolkit Directory>/plugins directory
+
+Start Broker and Open Toolkit
